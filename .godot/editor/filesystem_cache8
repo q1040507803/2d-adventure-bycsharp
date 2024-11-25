@@ -1,0 +1,52 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1730903653
+icon.svg::CompressedTexture2D::748210037171721955::1728477110::1728477117::1::::<><>::
+::res://assets/::1730810973
+SmileySans-Oblique.otf::FontFile::9033305048857678165::1711631826::1728478258::1::::<><>::
+trunk.tres::TileSet::1900283355781878162::1730810973::0::1::::<><>::uid://mp1ebc7vgi6r::::res://assets/legacy_fantasy/Trees/Tree-Assets.png
+::res://assets/bgm/::1728478258
+02 1 titles LOOP.mp3::AudioStreamMP3::9181223965489845039::1711631826::1728478258::1::::<><>::
+21 11 forest LOOP.mp3::AudioStreamMP3::2411247244335222302::1711631826::1728478258::1::::<><>::
+27 14 BOSS fixing LOOP.mp3::AudioStreamMP3::8336231486878013811::1711631826::1728478258::1::::<><>::
+29 15 game over LOOP.mp3::AudioStreamMP3::4740429853117525397::1711631826::1728478258::1::::<><>::
+::res://assets/gdb-gamepad-2/::1728478258
+gdb-keyboard-2.png::CompressedTexture2D::766137183715816115::1711631826::1728478258::1::::<><>::
+gdb-switch-2.png::CompressedTexture2D::8511480594114554957::1711631826::1728478258::1::::<><>::
+::res://assets/generic_char/::1728478258
+char_blue_1.png::CompressedTexture2D::7637203890281942723::1711631826::1728478258::1::::<><>::
+char_blue_2.png::CompressedTexture2D::6673804738440408745::1711631826::1728478258::1::::<><>::
+::res://assets/legacy_fantasy/::1728478258
+Buildings.png::CompressedTexture2D::2062543343322993290::1711631826::1728478258::1::::<><>::
+HUD.png::CompressedTexture2D::7376882034895120648::1711631826::1728478258::1::::<><>::
+Props-Rocks.png::CompressedTexture2D::8418032110232969036::1711631826::1728478258::1::::<><>::
+Tiles.png::CompressedTexture2D::1843164829441719000::1711631826::1728478258::1::::<><>::
+::res://assets/legacy_fantasy/Background/::1728478258
+Background.png::CompressedTexture2D::166850684003866148::1711631826::1728478258::1::::<><>::
+::res://assets/legacy_fantasy/Boar/::1728478258
+Hit-Sheet.png::CompressedTexture2D::7698866701117206950::1711631826::1728478258::1::::<><>::
+Idle-Sheet.png::CompressedTexture2D::8921274628114260343::1711631826::1728478258::1::::<><>::
+Run-Sheet.png::CompressedTexture2D::4760608395102976612::1711631826::1728478258::1::::<><>::
+Walk-Base-Sheet.png::CompressedTexture2D::6161329994402134335::1711631826::1728478258::1::::<><>::
+::res://assets/legacy_fantasy/Trees/::1728478258
+Background-Hills.png::CompressedTexture2D::5415109414664173268::1711631826::1728478258::1::::<><>::
+Background-Trees.png::CompressedTexture2D::2922308018125987892::1711631826::1728478258::1::::<><>::
+Background.png::CompressedTexture2D::7067195758815925831::1711631826::1728478258::1::::<><>::
+Tree-Assets.png::CompressedTexture2D::874817632050034639::1711631826::1728478258::1::::<><>::
+::res://assets/sfx/::1728478258
+07_human_atk_sword_1.ogg::AudioStreamOggVorbis::1280130075240778146::1711631826::1728478258::1::::<><>::
+12_human_jump_3.ogg::AudioStreamOggVorbis::5958867196430790005::1711631826::1728478258::1::::<><>::
+impactGlass_heavy_004.ogg::AudioStreamOggVorbis::8317058268822379059::1711631826::1728478258::1::::<><>::
+impactTin_medium_004.ogg::AudioStreamOggVorbis::6581085450012861629::1711631826::1728478258::1::::<><>::
+::res://interface/::1729000839
+IStateOwner.cs::CSharpScript::-1::1729338182::0::1::::<><>::
+::res://scenes/::1730812193
+boar.tscn::PackedScene::5100665350362756249::1730812193::0::1::::<><>::uid://c4olrhckpgtim::::res://scenes/enemy.tscn<>res://scripts/Boar.cs<>uid://d0dsdbx8m5sp8::::res://assets/legacy_fantasy/Boar/Idle-Sheet.png<>uid://b83cr3ueuv1xg::::res://assets/legacy_fantasy/Boar/Run-Sheet.png<>uid://ct1ug71qwngr4::::res://assets/legacy_fantasy/Boar/Walk-Base-Sheet.png
+enemy.tscn::PackedScene::6837917738090509640::1730385000::0::1::::<><>::res://scripts/Enemy.cs
+player.tscn::PackedScene::1844270225270663460::1730812035::0::1::::<><>::res://scripts/Player.cs<>uid://dg2rvq5qp11a2::::res://assets/generic_char/char_blue_1.png<>uid://c2c3ua4st26t6::::res://assets/generic_char/char_blue_2.png
+world.tscn::PackedScene::5397305327797682855::1730030363::0::1::::<><>::res://scripts/World.cs<>uid://1jm4jq8yjxr5::::res://scenes/player.tscn<>uid://cm3ahnc8s7hw::::res://assets/legacy_fantasy/Background/Background.png<>uid://2crnh7qswleo::::res://assets/trunk.tres<>uid://cjfeccnxygvqq::::res://assets/legacy_fantasy/Trees/Background-Hills.png<>uid://bhvt8r63i50qa::::res://assets/legacy_fantasy/Trees/Background-Trees.png
+::res://scripts/::1730810998
+Boar.cs::CSharpScript::-1::1730812277::0::1::::<><>::
+Enemy.cs::CSharpScript::-1::1730809762::0::1::::<><>::
+Player.cs::CSharpScript::-1::1730030213::0::1::::<>CharacterBody2D<>::
+StateMachine.cs::CSharpScript::-1::1730028680::0::1::::<><>::
+World.cs::CSharpScript::-1::1728818900::0::1::::<>Node2D<>::

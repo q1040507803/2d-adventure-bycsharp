@@ -1,0 +1,17 @@
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\2D Adventure ByCsharp.deps.json
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\2D Adventure ByCsharp.runtimeconfig.json
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\2D Adventure ByCsharp.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\2D Adventure ByCsharp.pdb
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.csproj.AssemblyReference.cache
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.AssemblyInfoInputs.cache
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.AssemblyInfo.cs
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.csproj.CoreCompileInputs.cache
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adven.B394F0B7.Up2Date
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\refint\2D Adventure ByCsharp.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.pdb
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.genruntimeconfig.cache
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\ref\2D Adventure ByCsharp.dll
