@@ -1,10 +1,10 @@
-res://scenes/boar.tscn
-res://assets/trunk.tres
 res://scripts/Boar.cs
-res://scripts/Player.cs
-res://scripts/Enemy.cs
-res://scripts/StateMachine.cs
 res://scripts/World.cs
-res://scenes/world.tscn
+res://scripts/Player.cs
+res://scripts/StateMachine.cs
+res://scripts/Enemy.cs
 res://scenes/player.tscn
+res://assets/trunk.tres
+res://scenes/world.tscn
 res://scenes/enemy.tscn
+res://scenes/boar.tscn

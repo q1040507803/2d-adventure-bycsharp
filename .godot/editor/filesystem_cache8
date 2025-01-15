@@ -1,9 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730903653
+::res://::1736946928
 icon.svg::CompressedTexture2D::748210037171721955::1728477110::1728477117::1::::<><>::
-::res://assets/::1730810973
+README.md::TextFile::-1::1732544100::0::1::::<><>::
+::res://assets/::1736257239
 SmileySans-Oblique.otf::FontFile::9033305048857678165::1711631826::1728478258::1::::<><>::
-trunk.tres::TileSet::1900283355781878162::1730810973::0::1::::<><>::uid://mp1ebc7vgi6r::::res://assets/legacy_fantasy/Trees/Tree-Assets.png
+trunk.tres::TileSet::1900283355781878162::1736257239::0::1::::<><>::uid://mp1ebc7vgi6r::::res://assets/legacy_fantasy/Trees/Tree-Assets.png
 ::res://assets/bgm/::1728478258
 02 1 titles LOOP.mp3::AudioStreamMP3::9181223965489845039::1711631826::1728478258::1::::<><>::
 21 11 forest LOOP.mp3::AudioStreamMP3::2411247244335222302::1711631826::1728478258::1::::<><>::
@@ -39,14 +40,14 @@ impactGlass_heavy_004.ogg::AudioStreamOggVorbis::8317058268822379059::1711631826
 impactTin_medium_004.ogg::AudioStreamOggVorbis::6581085450012861629::1711631826::1728478258::1::::<><>::
 ::res://interface/::1729000839
 IStateOwner.cs::CSharpScript::-1::1729338182::0::1::::<><>::
-::res://scenes/::1730812193
-boar.tscn::PackedScene::5100665350362756249::1730812193::0::1::::<><>::uid://c4olrhckpgtim::::res://scenes/enemy.tscn<>res://scripts/Boar.cs<>uid://d0dsdbx8m5sp8::::res://assets/legacy_fantasy/Boar/Idle-Sheet.png<>uid://b83cr3ueuv1xg::::res://assets/legacy_fantasy/Boar/Run-Sheet.png<>uid://ct1ug71qwngr4::::res://assets/legacy_fantasy/Boar/Walk-Base-Sheet.png
-enemy.tscn::PackedScene::6837917738090509640::1730385000::0::1::::<><>::res://scripts/Enemy.cs
-player.tscn::PackedScene::1844270225270663460::1730812035::0::1::::<><>::res://scripts/Player.cs<>uid://dg2rvq5qp11a2::::res://assets/generic_char/char_blue_1.png<>uid://c2c3ua4st26t6::::res://assets/generic_char/char_blue_2.png
-world.tscn::PackedScene::5397305327797682855::1730030363::0::1::::<><>::res://scripts/World.cs<>uid://1jm4jq8yjxr5::::res://scenes/player.tscn<>uid://cm3ahnc8s7hw::::res://assets/legacy_fantasy/Background/Background.png<>uid://2crnh7qswleo::::res://assets/trunk.tres<>uid://cjfeccnxygvqq::::res://assets/legacy_fantasy/Trees/Background-Hills.png<>uid://bhvt8r63i50qa::::res://assets/legacy_fantasy/Trees/Background-Trees.png
+::res://scenes/::1736257394
+boar.tscn::PackedScene::5100665350362756249::1736257240::0::1::::<><>::uid://c4olrhckpgtim::::res://scenes/enemy.tscn<>res://scripts/Boar.cs<>uid://d0dsdbx8m5sp8::::res://assets/legacy_fantasy/Boar/Idle-Sheet.png<>uid://b83cr3ueuv1xg::::res://assets/legacy_fantasy/Boar/Run-Sheet.png<>uid://ct1ug71qwngr4::::res://assets/legacy_fantasy/Boar/Walk-Base-Sheet.png
+enemy.tscn::PackedScene::6837917738090509640::1736257239::0::1::::<><>::res://scripts/Enemy.cs
+player.tscn::PackedScene::1844270225270663460::1736257239::0::1::::<><>::res://scripts/Player.cs<>uid://dg2rvq5qp11a2::::res://assets/generic_char/char_blue_1.png<>uid://c2c3ua4st26t6::::res://assets/generic_char/char_blue_2.png
+world.tscn::PackedScene::5397305327797682855::1736257394::0::1::::<><>::res://scripts/World.cs<>uid://1jm4jq8yjxr5::::res://scenes/player.tscn<>uid://cm3ahnc8s7hw::::res://assets/legacy_fantasy/Background/Background.png<>uid://2crnh7qswleo::::res://assets/trunk.tres<>uid://cjfeccnxygvqq::::res://assets/legacy_fantasy/Trees/Background-Hills.png<>uid://bhvt8r63i50qa::::res://assets/legacy_fantasy/Trees/Background-Trees.png<>uid://cew2hil3p5m7j::::res://scenes/boar.tscn
 ::res://scripts/::1730810998
-Boar.cs::CSharpScript::-1::1730812277::0::1::::<><>::
-Enemy.cs::CSharpScript::-1::1730809762::0::1::::<><>::
-Player.cs::CSharpScript::-1::1730030213::0::1::::<>CharacterBody2D<>::
-StateMachine.cs::CSharpScript::-1::1730028680::0::1::::<><>::
+Boar.cs::CSharpScript::-1::1736044811::0::1::::<>CharacterBody2D<>::
+Enemy.cs::CSharpScript::-1::1730906868::0::1::::<>CharacterBody2D<>::
+Player.cs::CSharpScript::-1::1736258018::0::1::::<>CharacterBody2D<>::
+StateMachine.cs::CSharpScript::-1::1736781679::0::1::::<><>::
 World.cs::CSharpScript::-1::1728818900::0::1::::<>Node2D<>::

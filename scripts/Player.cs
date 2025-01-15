@@ -16,11 +16,14 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 		Landing,
 		WallSliding,
 		WallJump,
+		Attack1,
+		Attack2,
+		Attack3,
 	}
 
 	private readonly State[] groundStates = 
 	{
-		State.Idle, State.Running, State.Landing,
+		State.Idle, State.Running, State.Landing, State.Attack1, State.Attack2, State.Attack3
 	};
 	#endregion
 
@@ -35,6 +38,10 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 	
 	#region Child
 
+	#region Export
+	[Export] public bool CanCombo;
+	#endregion
+
 	public AnimationPlayer AnimationPlayer = new AnimationPlayer();
 	public Timer CoyoteTimer = new Timer();
 	public Timer JumpRequestTimer = new Timer();
@@ -48,6 +55,8 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 	#endregion
 	private bool isFirstTick;
 
+	private bool isComboRequested = false;
+
 	private float gravity = (float)ProjectSettings.GetSetting("physics/2d/default_gravity");
 
     private Player()
@@ -56,7 +65,7 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 	}
 	public override void _Ready()
     {
-		#region onready
+		#region onReady
 		Sprite2D = GetNode<Sprite2D>("Graphics/Sprite2D");
 		AnimationPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 		CoyoteTimer = GetNode<Timer>("CoyoteTimer");
@@ -78,6 +87,10 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 			JumpRequestTimer.Stop();
 			if(Velocity.Y < JumpVelocity / 2.0f)
 				Velocity = Velocity with { Y = JumpVelocity / 2.0f };
+		}
+		if (@event.IsActionPressed("attack") && CanCombo)
+		{
+			isComboRequested = true;
 		}
     }
 
@@ -120,6 +133,18 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 				Velocity = WallJumpVelocity with { X = WallJumpVelocity.X * GetWallNormal().X };
                 JumpRequestTimer.Stop();
 				break;
+			case State.Attack1:
+			    AnimationPlayer.Play("attack_1");
+				isComboRequested = false;
+				break;
+			case State.Attack2:
+				AnimationPlayer.Play("attack_2");
+				isComboRequested = false;
+				break;
+			case State.Attack3:
+				AnimationPlayer.Play("attack_3");
+				isComboRequested = false;
+				break;
 		}
 
 		isFirstTick = true;
@@ -139,6 +164,7 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
             return State.Fall;
 
 		var movement = Input.GetAxis("move_left", "move_right");
+		//判断是否静止
         var isStill = Mathf.IsZeroApprox(movement) && Mathf.IsZeroApprox(Velocity.X);
 		
 		switch(currentState)
@@ -148,10 +174,14 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 			case State.Idle:
 				if (!isStill)
 					return State.Running;
+				if (Input.IsActionJustPressed("attack"))
+					return State.Attack1;
 				break;
 			case State.Running:
 				if(isStill)
 				    return State.Idle;
+				if (Input.IsActionJustPressed("attack"))
+					return State.Attack1;
 				break;
 			case State.Jump:
 				if(Velocity.Y >= 0)
@@ -180,7 +210,19 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 					return State.WallSliding;
 				if(Velocity.Y >= 0)
 					return State.Fall;
-				break;				
+				break;
+			case State.Attack1:
+				if (!AnimationPlayer.IsPlaying())
+					return isComboRequested ? State.Attack2 : State.Idle;
+				break;
+			case State.Attack2:
+				if (!AnimationPlayer.IsPlaying())
+					return isComboRequested ? State.Attack3 : State.Idle;
+				break;
+			case State.Attack3:
+				if (!AnimationPlayer.IsPlaying())
+					return State.Idle;
+				break;			
 		}
 
 		keepCurrent = true;
@@ -215,7 +257,12 @@ public partial class Player : CharacterBody2D, IStateOwner<Player.State>
 					Stand(isFirstTick ? 0 : gravity, delta);
 				else
 			    	Move(gravity, delta);
-				break;			
+				break;
+			case State.Attack1:
+			case State.Attack2:
+			case State.Attack3:
+				Stand(gravity, delta);
+				break;					
 		}
 		isFirstTick = false;
     }

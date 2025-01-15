@@ -15,3 +15,4 @@ D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\refint\2D Adventure By
 D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.pdb
 D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.genruntimeconfig.cache
 D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\ref\2D Adventure ByCsharp.dll
+D:\Godot\2d-adventure-bycsharp\.godot\mono\temp\obj\Debug\2D Adventure ByCsharp.sourcelink.json
